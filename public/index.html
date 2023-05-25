@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="dist/index.js" type="module"></script>
+    <script src="dist/index.js" type="module" defer></script>
     <style>
         body {
             display: flex;
@@ -16,7 +18,7 @@
         .container {
             background-color: white;
             padding: 20px;
-            border: 2px solid pink;
+            border: 20px solid rgb(14, 2, 4);
             border-radius: 10px;
             text-align: center;
             position: relative; /* Add this line */
@@ -30,11 +32,39 @@
             max-width: 100%;
             height: auto;
         }
-        .centered-button {
+        .play-button {
             position: absolute;
-            top: 50%;
+            top: 90%;
             left: 50%;
             transform: translate(-50%, -50%);
+            border-radius: 40%;
+            background-color: rgb(78, 47, 255);
+            border: none;
+            padding: 0;
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+            font-family: "Lucida Console";
+            font-weight: bold;
+
+            font-size: 24px;
+        }
+        .exit-button {
+            position: absolute;
+            top: 88%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+            border-radius: 40%;
+            background-color: rgb(130, 255, 47);
+            border: none;
+            padding: 0;
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+            font-family: "Lucida Console";
+            font-weight: bold;
+
+            font-size: 24px;
         }
 
         /* Responsive styles */
@@ -47,11 +77,15 @@
     <title>Document</title>
 </head>
 <body>
+  
     <div class="container">
-        <h1>catagotchi</h1>
+      <h1>Your virtual pet - catagotchi app</h1>
         <div class="image-container">
-            <img src="/public/catagotchi.png" alt="Cos">
-            <button class="centered-button">Click Me</button>
+            <img src="/images/catagotchi.png" alt="Catagotchi">
+            <button class="play-button">Play</button>
+            <button class="exit-button">Exit</button>
+            <button class="help-button">Exit</button>
+            
         </div>
         
     </div>
