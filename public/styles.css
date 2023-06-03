@@ -1,0 +1,199 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+.container {
+  background-color: white;
+  padding: 20px;
+  border: 20px solid rgb(14, 2, 4);
+  border-radius: 10px;
+  text-align: center;
+  position: relative; /* Add this line */
+}
+.centered-message {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30%;
+  
+  border: none;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  font-family: "Lucida Console";
+  font-weight: bold;
+
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.play-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40%;
+  background-color: rgb(78, 47, 255);
+  border: none;
+  padding: 0;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  font-family: "Lucida Console";
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.play-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.exit-button {
+position: absolute;
+top: 87.2%;
+left: 64%;
+transform: translate(-50%, -50%);
+border-radius: 40%;
+background-color: rgb(130, 255, 47);
+border: none;
+padding: 0;
+width: 75px;
+height: 74px;
+cursor: pointer;
+font-family: "Lucida Console";
+font-weight: bold;
+font-size: 24px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exit-button:hover {
+transform: translate(-50%, -50%) scale(1.05);
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.exit-button:active {
+transform: translate(-50%, -50%) scale(0.95);
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.help-button {
+  position: absolute;
+  top: 88.3%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  border-radius: 40%;
+  background-color: rgb(247, 156, 36);
+  border: none;
+  padding: 0;
+  width: 75px;
+  height: 74px;
+  cursor: pointer;
+  font-family: "Lucida Console";
+  font-weight: bold;
+
+  font-size: 24px;
+}
+.help-button {
+  position: absolute;
+  top: 87.3%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  border-radius: 40%;
+  background-color: rgb(247, 156, 36);
+  border: none;
+  padding: 0;
+  width: 75px;
+  height: 74px;
+  cursor: pointer;
+  font-family: "Lucida Console";
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.help-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.help-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.save-button {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  border: none;
+  background-color: rgb(130, 255, 47);
+  color: black;
+  font-family: "Lucida Console";
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  perspective: 1000px; /* Add perspective to create 3D effect */
+}
+
+.save-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: rotateX(90deg); /* Initial rotation */
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.save-button:hover::before {
+  transform: rotateX(0deg); /* Rotate to reveal the button face */
+}
+.form-container {
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin-top: 30px; /* Adjust the top margin for smaller screens */
+  }
+}
+.form-container1 {
+  margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+@media (max-width: 768px) {
+  .form-container1 {
+    margin-top: 30px; /* Adjust the top margin for smaller screens */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+}
